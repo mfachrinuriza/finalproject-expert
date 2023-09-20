@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.otf">
+            <string>Inter-Bold</string>
+        </array>
+        <array key="Inter-Medium.otf">
+            <string>Inter-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoriteViewController" customModule="final_project" customModuleProvider="target">
+            <connections>
+                <outlet property="lblIsEmpty" destination="ZJr-tQ-0NY" id="NIE-II-Ozz"/>
+                <outlet property="tableView" destination="A4G-Z9-1F7" id="EJr-p0-zVc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7s-om-WGe">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <textAttributes key="largeTitleTextAttributes">
+                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                    </textAttributes>
+                </navigationBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WgM-Vd-dg6" userLabel="Nav">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qa-xD-UgI">
+                            <rect key="frame" x="16" y="9" width="358" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="4Vh-E6-vEn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="20"/>
+                            <color key="textColor" name="Black70"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="Bg"/>
+                    <constraints>
+                        <constraint firstItem="4Qa-xD-UgI" firstAttribute="centerY" secondItem="WgM-Vd-dg6" secondAttribute="centerY" id="McB-lW-A9E"/>
+                        <constraint firstAttribute="trailing" secondItem="4Qa-xD-UgI" secondAttribute="trailing" constant="16" id="Xye-M3-AAe"/>
+                        <constraint firstItem="4Qa-xD-UgI" firstAttribute="leading" secondItem="WgM-Vd-dg6" secondAttribute="leading" constant="16" id="ySC-4A-H8f"/>
+                    </constraints>
+                </view>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="A4G-Z9-1F7">
+                    <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                    <color key="backgroundColor" name="Bg"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Data Is Empty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJr-tQ-0NY">
+                    <rect key="frame" x="109" y="412.33333333333331" width="172" height="19.666666666666686"/>
+                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                    <color key="textColor" name="Black70"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Bg"/>
+            <constraints>
+                <constraint firstItem="A4G-Z9-1F7" firstAttribute="top" secondItem="b7s-om-WGe" secondAttribute="bottom" id="EiE-43-H56"/>
+                <constraint firstItem="ZJr-tQ-0NY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KiC-X5-DRZ"/>
+                <constraint firstItem="WgM-Vd-dg6" firstAttribute="top" secondItem="b7s-om-WGe" secondAttribute="top" id="QUe-Ye-sTL"/>
+                <constraint firstItem="WgM-Vd-dg6" firstAttribute="leading" secondItem="b7s-om-WGe" secondAttribute="leading" id="TdF-TU-aIP"/>
+                <constraint firstItem="WgM-Vd-dg6" firstAttribute="bottom" secondItem="b7s-om-WGe" secondAttribute="bottom" id="XeQ-jj-15Y"/>
+                <constraint firstAttribute="trailing" secondItem="b7s-om-WGe" secondAttribute="trailing" id="Xj3-dS-rmB"/>
+                <constraint firstItem="b7s-om-WGe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e3X-Tl-Qc4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="A4G-Z9-1F7" secondAttribute="bottom" id="fB2-Pd-bRd"/>
+                <constraint firstItem="A4G-Z9-1F7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="h6y-Co-WYZ"/>
+                <constraint firstItem="ZJr-tQ-0NY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="jjW-yP-NeV"/>
+                <constraint firstItem="b7s-om-WGe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kql-Fj-Etc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A4G-Z9-1F7" secondAttribute="trailing" id="sGk-F2-jez"/>
+                <constraint firstItem="WgM-Vd-dg6" firstAttribute="trailing" secondItem="b7s-om-WGe" secondAttribute="trailing" id="so2-xg-v9D"/>
+            </constraints>
+            <point key="canvasLocation" x="136.92307692307691" y="19.90521327014218"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Bg">
+            <color red="0.94117647409439087" green="0.94117647409439087" blue="0.94117647409439087" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Black70">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
