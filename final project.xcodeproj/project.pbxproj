@@ -33,6 +33,8 @@
 		4A5C1EC928E69E87008E2B61 /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5C1EC828E69E87008E2B61 /* GameRepository.swift */; };
 		4A5C1ECC28E6CD1A008E2B61 /* BestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5C1ECA28E6CD1A008E2B61 /* BestCell.swift */; };
 		4A5C1ECD28E6CD1A008E2B61 /* BestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A5C1ECB28E6CD1A008E2B61 /* BestCell.xib */; };
+		4A6645ED2ACC0D1D00A0747D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4A6645EC2ACC0D1D00A0747D /* .swiftlint.yml */; };
+		4A6645EF2ACC1AD400A0747D /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 4A6645EE2ACC1AD400A0747D /* codemagic.yaml */; };
 		4A674C9B2AB97E44002105D1 /* DetailShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A674C9A2AB97E44002105D1 /* DetailShimmer.swift */; };
 		4A674C9D2AB97E4F002105D1 /* DetailShimmer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A674C9C2AB97E4F002105D1 /* DetailShimmer.xib */; };
 		4A674CA02AB98017002105D1 /* AutoShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A674C9F2AB98017002105D1 /* AutoShimmerView.swift */; };
@@ -113,6 +115,8 @@
 		4A5C1EC828E69E87008E2B61 /* GameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepository.swift; sourceTree = "<group>"; };
 		4A5C1ECA28E6CD1A008E2B61 /* BestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestCell.swift; sourceTree = "<group>"; };
 		4A5C1ECB28E6CD1A008E2B61 /* BestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BestCell.xib; sourceTree = "<group>"; };
+		4A6645EC2ACC0D1D00A0747D /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		4A6645EE2ACC1AD400A0747D /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 		4A674C982AB97BAE002105D1 /* final project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "final project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A674C9A2AB97E44002105D1 /* DetailShimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailShimmer.swift; sourceTree = "<group>"; };
 		4A674C9C2AB97E4F002105D1 /* DetailShimmer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailShimmer.xib; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 		4A4489A728B605D000B74163 = {
 			isa = PBXGroup;
 			children = (
+				4A6645EE2ACC1AD400A0747D /* codemagic.yaml */,
+				4A6645EC2ACC0D1D00A0747D /* .swiftlint.yml */,
 				4A4489B228B605D000B74163 /* final project */,
 				D6AD68C3219BE05164B5F2C6 /* Pods */,
 				4A674CAD2AB9969C002105D1 /* finalProjectTest */,
@@ -675,6 +681,7 @@
 				4A4489AD28B605D000B74163 /* Frameworks */,
 				4A4489AE28B605D000B74163 /* Resources */,
 				450CE1212F18CD7537881414 /* [CP] Embed Pods Frameworks */,
+				4A8D4C072ABC39F400D4EDE7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -746,6 +753,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A6645ED2ACC0D1D00A0747D /* .swiftlint.yml in Resources */,
 				4A448A0328B636BE00B74163 /* Inter-Bold.otf in Resources */,
 				4A8DED7028F2C5790040291F /* FavoriteViewController.xib in Resources */,
 				4A448A0028B636BE00B74163 /* Inter-SemiBold.otf in Resources */,
@@ -756,6 +764,7 @@
 				4A58E80428B67C3200DB3979 /* DetailViewController.xib in Resources */,
 				4A8DED7728F2FCA00040291F /* GameCell.xib in Resources */,
 				4A58E80828B67C4100DB3979 /* ProfileViewController.xib in Resources */,
+				4A6645EF2ACC1AD400A0747D /* codemagic.yaml in Resources */,
 				4A448A0628B636BE00B74163 /* Inter-Regular.otf in Resources */,
 				4A8DED8128F4175B0040291F /* ProfileEditViewController.xib in Resources */,
 				4A4489E028B633DE00B74163 /* HomeViewController.xib in Resources */,
@@ -812,6 +821,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-final project/Pods-final project-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		4A8D4C072ABC39F400D4EDE7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then \n  swiftlint \nelse \n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\" \nfi\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -917,7 +944,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -978,7 +1005,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1019,6 +1046,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "final project/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Fachri Nuriza";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -1049,6 +1077,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "final project/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Fachri Nuriza";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
