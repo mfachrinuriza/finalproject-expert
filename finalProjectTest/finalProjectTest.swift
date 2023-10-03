@@ -19,7 +19,7 @@ final class finalProjectTest: XCTestCase {
     }
 
     func testSumCount() throws {
-        XCTAssertEqual(2+2, 2)
+        XCTAssertEqual(2+2, 4)
     }
 
     func testPerformanceExample() throws {

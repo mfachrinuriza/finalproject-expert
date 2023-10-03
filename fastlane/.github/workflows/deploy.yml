@@ -1,0 +1,16 @@
+name: deploy-ios-app
+on:
+  push:
+    branches:
+      - "main"
+jobs:
+  deploy:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ruby-version: 3.2.1
+          bundler-cache: true
+      - run: |
+          bundle update
+          bundle exec fastlane test
