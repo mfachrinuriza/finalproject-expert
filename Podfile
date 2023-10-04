@@ -15,3 +15,10 @@ target 'final project' do
   pod 'ShimmerSwift'
   pod 'SwiftLint', '0.40.1'
 end
+
+use_frameworks!
+workspace 'final project'
+ 
+target 'Common' do
+  project '../Common/Common'
+end

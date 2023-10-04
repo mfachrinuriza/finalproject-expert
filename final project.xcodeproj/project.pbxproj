@@ -42,6 +42,8 @@
 		4A674CA52AB98EA7002105D1 /* ProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A674CA42AB98EA7002105D1 /* ProfileAssembly.swift */; };
 		4A674CA72AB98EDF002105D1 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A674CA62AB98EDF002105D1 /* MainAssembly.swift */; };
 		4A674CAF2AB9969C002105D1 /* finalProjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A674CAE2AB9969C002105D1 /* finalProjectTest.swift */; };
+		4A6DB65F2ACD58F2004A3860 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6DB65E2ACD58F2004A3860 /* Common.framework */; };
+		4A6DB6602ACD58F2004A3860 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6DB65E2ACD58F2004A3860 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A72B29A28B698400050BA52 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72B29928B698400050BA52 /* Colors.swift */; };
 		4A72B29C28B6992E0050BA52 /* FontEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72B29B28B6992E0050BA52 /* FontEnum.swift */; };
 		4A8DED5428F29DD70040291F /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DED5328F29DD70040291F /* DetailViewModel.swift */; };
@@ -87,6 +89,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4A6DB6612ACD58F2004A3860 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4A6DB6602ACD58F2004A3860 /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4A1F28E528B6AEC000C61287 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4A1F28E628B6AEC000C61287 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
@@ -126,6 +142,7 @@
 		4A674CA62AB98EDF002105D1 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
 		4A674CAC2AB9969C002105D1 /* finalProjectTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finalProjectTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A674CAE2AB9969C002105D1 /* finalProjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalProjectTest.swift; sourceTree = "<group>"; };
+		4A6DB65E2ACD58F2004A3860 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A72B29928B698400050BA52 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4A72B29B28B6992E0050BA52 /* FontEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontEnum.swift; sourceTree = "<group>"; };
 		4A8DED5328F29DD70040291F /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
@@ -169,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2FB0AE2E5A2882E7ADA15DB /* Pods_final_project.framework in Frameworks */,
+				4A6DB65F2ACD58F2004A3860 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +682,7 @@
 		D7B321CC7BA578CFC7ACB877 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A6DB65E2ACD58F2004A3860 /* Common.framework */,
 				C03A0A054817694A66EC874A /* Pods_final_project.framework */,
 			);
 			name = Frameworks;
@@ -682,6 +701,7 @@
 				4A4489AE28B605D000B74163 /* Resources */,
 				450CE1212F18CD7537881414 /* [CP] Embed Pods Frameworks */,
 				4A8D4C072ABC39F400D4EDE7 /* ShellScript */,
+				4A6DB6612ACD58F2004A3860 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1104,7 +1124,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Skuy.finalProjectTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1123,7 +1143,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Skuy.finalProjectTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
