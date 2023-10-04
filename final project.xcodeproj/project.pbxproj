@@ -42,8 +42,6 @@
 		4A674CA52AB98EA7002105D1 /* ProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A674CA42AB98EA7002105D1 /* ProfileAssembly.swift */; };
 		4A674CA72AB98EDF002105D1 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A674CA62AB98EDF002105D1 /* MainAssembly.swift */; };
 		4A674CAF2AB9969C002105D1 /* finalProjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A674CAE2AB9969C002105D1 /* finalProjectTest.swift */; };
-		4A6DB65F2ACD58F2004A3860 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6DB65E2ACD58F2004A3860 /* Common.framework */; };
-		4A6DB6602ACD58F2004A3860 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6DB65E2ACD58F2004A3860 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A72B29A28B698400050BA52 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72B29928B698400050BA52 /* Colors.swift */; };
 		4A72B29C28B6992E0050BA52 /* FontEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72B29B28B6992E0050BA52 /* FontEnum.swift */; };
 		4A8DED5428F29DD70040291F /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DED5328F29DD70040291F /* DetailViewModel.swift */; };
@@ -61,6 +59,8 @@
 		4A8DED8628F41B090040291F /* ProfileEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DED8528F41B090040291F /* ProfileEditViewModel.swift */; };
 		4A8DED8828F41C270040291F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DED8728F41C270040291F /* Profile.swift */; };
 		4A8DED8B28F41DCC0040291F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DED8A28F41DCC0040291F /* ProfileViewModel.swift */; };
+		4A8E21C42ACD660B00B5DF96 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8E21C32ACD660A00B5DF96 /* Common.framework */; };
+		4A8E21C52ACD660B00B5DF96 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8E21C32ACD660A00B5DF96 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A99D76C28B794EB002B7AD4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A99D76B28B794EB002B7AD4 /* Game.swift */; };
 		4AAE251F2AB8539A001D4142 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE251E2AB8539A001D4142 /* DI.swift */; };
 		4AAE25222AB8540A001D4142 /* GameAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE25212AB8540A001D4142 /* GameAssembly.swift */; };
@@ -90,13 +90,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4A6DB6612ACD58F2004A3860 /* Embed Frameworks */ = {
+		4A8E21C62ACD660B00B5DF96 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4A6DB6602ACD58F2004A3860 /* Common.framework in Embed Frameworks */,
+				4A8E21C52ACD660B00B5DF96 /* Common.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +142,6 @@
 		4A674CA62AB98EDF002105D1 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
 		4A674CAC2AB9969C002105D1 /* finalProjectTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finalProjectTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A674CAE2AB9969C002105D1 /* finalProjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalProjectTest.swift; sourceTree = "<group>"; };
-		4A6DB65E2ACD58F2004A3860 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A72B29928B698400050BA52 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4A72B29B28B6992E0050BA52 /* FontEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontEnum.swift; sourceTree = "<group>"; };
 		4A8DED5328F29DD70040291F /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
@@ -160,6 +159,7 @@
 		4A8DED8528F41B090040291F /* ProfileEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewModel.swift; sourceTree = "<group>"; };
 		4A8DED8728F41C270040291F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		4A8DED8A28F41DCC0040291F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		4A8E21C32ACD660A00B5DF96 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A99D76B28B794EB002B7AD4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		4AAE251E2AB8539A001D4142 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
 		4AAE25212AB8540A001D4142 /* GameAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAssembly.swift; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2FB0AE2E5A2882E7ADA15DB /* Pods_final_project.framework in Frameworks */,
-				4A6DB65F2ACD58F2004A3860 /* Common.framework in Frameworks */,
+				4A8E21C42ACD660B00B5DF96 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,7 +682,7 @@
 		D7B321CC7BA578CFC7ACB877 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A6DB65E2ACD58F2004A3860 /* Common.framework */,
+				4A8E21C32ACD660A00B5DF96 /* Common.framework */,
 				C03A0A054817694A66EC874A /* Pods_final_project.framework */,
 			);
 			name = Frameworks;
@@ -701,7 +701,7 @@
 				4A4489AE28B605D000B74163 /* Resources */,
 				450CE1212F18CD7537881414 /* [CP] Embed Pods Frameworks */,
 				4A8D4C072ABC39F400D4EDE7 /* ShellScript */,
-				4A6DB6612ACD58F2004A3860 /* Embed Frameworks */,
+				4A8E21C62ACD660B00B5DF96 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
