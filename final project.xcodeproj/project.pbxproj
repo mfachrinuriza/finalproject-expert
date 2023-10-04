@@ -59,8 +59,6 @@
 		4A8DED8628F41B090040291F /* ProfileEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DED8528F41B090040291F /* ProfileEditViewModel.swift */; };
 		4A8DED8828F41C270040291F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DED8728F41C270040291F /* Profile.swift */; };
 		4A8DED8B28F41DCC0040291F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DED8A28F41DCC0040291F /* ProfileViewModel.swift */; };
-		4A8E21C42ACD660B00B5DF96 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8E21C32ACD660A00B5DF96 /* Common.framework */; };
-		4A8E21C52ACD660B00B5DF96 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8E21C32ACD660A00B5DF96 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A99D76C28B794EB002B7AD4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A99D76B28B794EB002B7AD4 /* Game.swift */; };
 		4AAE251F2AB8539A001D4142 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE251E2AB8539A001D4142 /* DI.swift */; };
 		4AAE25222AB8540A001D4142 /* GameAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE25212AB8540A001D4142 /* GameAssembly.swift */; };
@@ -88,20 +86,6 @@
 			remoteInfo = "final project";
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		4A8E21C62ACD660B00B5DF96 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4A8E21C52ACD660B00B5DF96 /* Common.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4A1F28E528B6AEC000C61287 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -159,7 +143,6 @@
 		4A8DED8528F41B090040291F /* ProfileEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewModel.swift; sourceTree = "<group>"; };
 		4A8DED8728F41C270040291F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		4A8DED8A28F41DCC0040291F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		4A8E21C32ACD660A00B5DF96 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A99D76B28B794EB002B7AD4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		4AAE251E2AB8539A001D4142 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
 		4AAE25212AB8540A001D4142 /* GameAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAssembly.swift; sourceTree = "<group>"; };
@@ -186,7 +169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2FB0AE2E5A2882E7ADA15DB /* Pods_final_project.framework in Frameworks */,
-				4A8E21C42ACD660B00B5DF96 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,7 +664,6 @@
 		D7B321CC7BA578CFC7ACB877 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A8E21C32ACD660A00B5DF96 /* Common.framework */,
 				C03A0A054817694A66EC874A /* Pods_final_project.framework */,
 			);
 			name = Frameworks;
@@ -701,7 +682,6 @@
 				4A4489AE28B605D000B74163 /* Resources */,
 				450CE1212F18CD7537881414 /* [CP] Embed Pods Frameworks */,
 				4A8D4C072ABC39F400D4EDE7 /* ShellScript */,
-				4A8E21C62ACD660B00B5DF96 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
